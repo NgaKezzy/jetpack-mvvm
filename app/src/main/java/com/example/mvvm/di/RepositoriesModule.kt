@@ -1,9 +1,9 @@
 //package com.example.mvvm.di
 //
-//import com.example.mvvm.repositories.MainLog
-//import com.example.mvvm.repositories.MainLogImpl
-//import com.example.mvvm.repositories.Store
-//import com.example.mvvm.repositories.StoreImpl
+//import com.example.mvvm.domain.repository.MainLog
+//import com.example.mvvm.data.repository.MainLogImpl
+//import com.example.mvvm.domain.repository.Store
+//import com.example.mvvm.data.repository.StoreImpl
 //import dagger.Binds
 //import dagger.Module
 //import dagger.hilt.InstallIn

@@ -1,4 +1,4 @@
-package com.example.mvvm.features.home.home
+package com.example.mvvm.features.home
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.material3.Button
@@ -8,24 +8,26 @@ import androidx.compose.ui.Modifier
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavHostController
 import com.example.mvvm.Screen
-import com.example.mvvm.features.home.home.HomeViewModel
+import com.example.mvvm.features.home.HomeViewModel
 
 @Composable
 fun HomeScreen(navController: NavHostController, viewModel: HomeViewModel = hiltViewModel()) {
     Column() {
-    Text("Counter = ${viewModel.counter.value}")
+        Text("Counter = ${viewModel.counter.value}")
+
+        Text("name = ${viewModel.name.value}")
         Button(
-        onClick = {
-            println("Button clicked")
-            viewModel.increment()
-             navController.navigate(Screen.DetailScreen.route)
+            onClick = {
+                println("Button clicked")
+                viewModel.increment()
+                viewModel.changedName()
 
+
+            }
+        ) {
+            Text("Click me")
         }
-    ) {
-        Text("Click me")
     }
-    }
-
 
 
 }

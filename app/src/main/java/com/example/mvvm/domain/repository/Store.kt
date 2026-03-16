@@ -1,4 +1,4 @@
-package com.example.mvvm.repositories
+package com.example.mvvm.domain.repository
 
 interface Store {
 

@@ -1,6 +1,7 @@
-package com.example.mvvm.repositories
+package com.example.mvvm.data.repository
 
 import android.content.SharedPreferences
+import com.example.mvvm.domain.repository.Store
 import dagger.hilt.android.internal.Contexts
 import dagger.hilt.android.qualifiers.ApplicationContext
 import jakarta.inject.Inject

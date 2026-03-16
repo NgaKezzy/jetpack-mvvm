@@ -5,8 +5,8 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.example.mvvm.features.home.home.DetailScreen
-import com.example.mvvm.features.home.home.HomeScreen
+import com.example.mvvm.features.home.DetailScreen
+import com.example.mvvm.features.home.HomeScreen
 
 sealed class Screen(val route: String) {
     object HomeScreen : Screen("home-screen")

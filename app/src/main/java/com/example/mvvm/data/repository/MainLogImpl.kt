@@ -1,6 +1,7 @@
-package com.example.mvvm.repositories
+package com.example.mvvm.data.repository
 
 import android.util.Log
+import com.example.mvvm.domain.repository.MainLog
 import jakarta.inject.Inject
 
 class MainLogImpl @Inject constructor() : MainLog {

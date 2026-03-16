@@ -1,4 +1,4 @@
-package com.example.mvvm.features.home.home
+package com.example.mvvm.features.home
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -11,9 +11,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
-import com.example.mvvm.features.home.home.DetailViewModel
+import com.example.mvvm.features.home.DetailViewModel
 
 @Composable
-fun DetailScreen(navController: NavController,hiltViewModel: DetailViewModel = hiltViewModel()) {
+fun DetailScreen(navController: NavController, viewModel: DetailViewModel = hiltViewModel()) {
     Box(modifier = Modifier.fillMaxWidth().fillMaxHeight().background(color = Color.Blue))
 }
