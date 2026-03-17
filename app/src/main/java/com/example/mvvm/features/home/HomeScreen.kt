@@ -13,7 +13,7 @@ import com.example.mvvm.features.home.HomeViewModel
 @Composable
 fun HomeScreen(navController: NavHostController, viewModel: HomeViewModel = hiltViewModel()) {
     Column() {
-        Text("Counter = ${viewModel.counter.value}")
+      Text("Counter = ${viewModel.counter.value}")
 
         Text("name = ${viewModel.name.value}")
         Button(
@@ -21,6 +21,7 @@ fun HomeScreen(navController: NavHostController, viewModel: HomeViewModel = hilt
                 println("Button clicked")
                 viewModel.increment()
                 viewModel.changedName()
+                navController.navigate(Screen.DetailScreen.route)
 
 
             }
@@ -28,6 +29,4 @@ fun HomeScreen(navController: NavHostController, viewModel: HomeViewModel = hilt
             Text("Click me")
         }
     }
-
-
 }
